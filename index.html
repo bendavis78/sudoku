@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="container">
+      <div id="boardContainer">
+        <div id="board"></div>
+      </div>
+      <div id="menu">
+        <div class="control">
+          <select name="boardSize">
+            <option value="9">9x9</option>
+            <option value="16">16x16</option>
+          </select>
+        </div>
+        <div id="modeButtons" class="control">
+          <button id="modeSolve"><i class="fa fa-lightbulb"></i></button>
+          <button id="modeCandidate"><i class="fa fa-edit"></i></button>
+        </div>
+        <div id="numberButtons" class="control">
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="sudoku.js"></script>
+  </body>
+</html>
