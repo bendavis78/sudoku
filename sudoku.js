@@ -50,7 +50,7 @@
     const currentNums = new Set();
     (el.dataset.candidates || '').split('').forEach(n => currentNums.add(n));
     Array.from(currentNums).sort().forEach(num => {
-      const span = el.querySelector(`.candidates span[data-number="${num}"]`);
+      const span = el.querySelector(`.candidates span[data-number="${num.toLowerCase()}"]`);
       span.textContent = num;
     });
   }
